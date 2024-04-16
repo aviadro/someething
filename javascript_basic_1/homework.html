@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework</title>
+  </head>
+  <body>
+    <script>
+      function isStringLengthGreaterThan5(inputString) {
+        return inputString.length > 5
+      }
+
+      // Example usage:
+      console.log(isStringLengthGreaterThan5('Hello')) // Output: false
+      console.log(isStringLengthGreaterThan5('Goodbye')) // Output: true
+
+      function checkEvenOrOdd(inputNumber) {
+        if (typeof inputNumber !== 'number' || isNaN(inputNumber)) {
+          return 'Invalid input'
+        } else {
+          return inputNumber % 2 === 0 ? 'Even' : 'Odd'
+        }
+      }
+
+      // Example usage:
+      console.log(checkEvenOrOdd(4)) // Output: Even
+      console.log(checkEvenOrOdd(7)) // Output: Odd
+      console.log(checkEvenOrOdd('Hello')) // Output: Invalid input
+
+      function areBothTrue(value1, value2) {
+        return value1 && value2
+      }
+
+      // Example usage:
+      console.log(areBothTrue(true, true)) // Output: true
+      console.log(areBothTrue(true, false)) // O
+    </script>
+  </body>
+</html>

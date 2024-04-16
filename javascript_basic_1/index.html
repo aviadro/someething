@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>JavaScript Variables</h1>
+
+    <p>Example&nbsp;another example</p>
+    <p>Example <br />another example</p>
+
+    <p id="demo"></p>
+
+    <script>
+      let name = 'Aviad'
+      let surname = 'Roichman'
+      let college = 'John brice'
+      console.log(name.length)
+      console.log(surname.length)
+      console.log(college.length)
+      console.log(
+        `uppercase: ${name.toUpperCase()} lowercase: ${name.toLowerCase()}`
+      )
+      console.log(
+        `uppercase: ${surname.toUpperCase()} lowercase: ${surname.toLowerCase()}`
+      )
+      console.log(
+        `uppercase: ${college.toUpperCase()} lowercase: ${college.toLowerCase()}`
+      )
+      console.log(`${name.at(0)}  ${name.at(-1)}`)
+      console.log(`${surname.at(0)}  ${surname.at(-1)}`)
+      console.log(`${college.at(0)}  ${college.at(-1)}`)
+      console.log(
+        `the space in the "college" string is in ${college.search(' ')}`
+      )
+      // Define a sample string
+      const sampleString = 'Hello, world!'
+
+      // Example 1: charAt()
+      const charAtIndex = sampleString.charAt(7) // Retrieves character at index 7
+      console.log('1. Character at index 7:', charAtIndex)
+
+      // Example 2: slice()
+      const slicedString = sampleString.slice(7) // Extracts characters from index 7 to the end
+      console.log('2. Sliced:', slicedString)
+
+      // Example 3: replace()
+      const replacedString = sampleString.replace('world', 'JavaScript')
+      console.log('3. Replaced:', replacedString)
+
+      // Define a sentence
+      const sentence = 'The quick brown fox jumps over the lazy dog'
+
+      // Split the sentence into words
+      const words = sentence.split(' ')
+
+      // Reverse the order of words
+      const reversedWords = words.reverse()
+
+      // Join the reversed words back into a sentence
+      const reversedSentence = reversedWords.join(' ')
+
+      // Display the reversed sentence
+      console.log(reversedSentence)
+
+      // Receive a sentence
+      const sentence2 = 'This is a sample sentence.'
+
+      // Get starting position and length
+      const startPosition = 3
+      const length = 3
+
+      // Extract the substring
+      const extractedSubstring = sentence2.substring(
+        startPosition,
+        startPosition + length
+      )
+
+      // Display the extracted substring
+      console.log('Substring:', extractedSubstring)
+
+      let age = prompt("Please enter your age") // You can change the value of age to test different cases
+
+      if (age < 18) {
+        console.log('You are a kid')
+      } else if (age >= 18 && age <= 65) {
+        console.log('You are an adult')
+      } else {
+        console.log('You are a senior citizen')
+      }
+
+      let residentialArea = prompt("Please enter your area") // Example residential area
+
+      if (age < 18) {
+        console.log('NO COMMENT')
+      } else if (age >= 18 && age <= 65) {
+        if (residentialArea.toUpperCase() === 'CENTER') {
+          console.log('NO COMMENT')
+        } else {
+          console.log('You are an adult 18-65')
+        }
+      } else {
+        if (residentialArea.toUpperCase() === 'CENTER') {
+          console.log('You are a senior citizen')
+        } else {
+          console.log('NO COMMENT')
+        }
+      }
+
+      let number = 12 // You can change the value of number to test different cases
+
+      if (number % 3 === 0 && number % 4 === 0) {
+        console.log(number + ' is divisible by both 3 and 4')
+      } else if (number % 3 === 0) {
+        console.log(number + ' is divisible by 3')
+      } else if (number % 4 === 0) {
+        console.log(number + ' is divisible by 4')
+      } else {
+        console.log(number + ' is not divisible by either 3 or 4')
+      }
+    </script>
+  </body>
+</html>
